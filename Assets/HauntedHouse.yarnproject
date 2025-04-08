@@ -1,7 +1,8 @@
 {
   "projectFileVersion": 2,
   "sourceFiles": [
-    "HauntedHouse.yarn"
+    "HauntedHouse.yarn",
+    "Olivia.yarn"
   ],
   "excludeFiles": [
     "**/*~/*"

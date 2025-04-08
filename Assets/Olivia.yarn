@@ -1,0 +1,132 @@
+﻿title: OliviaStart
+tags: 
+colorID: 0
+position: 1857,-1751
+---
+<<set $gameState to 1>>
+You: “Heya, kiddo,” you say. “What’s the matter? You look like you have seen a ghost!”
+Olivia: “That's because I have seen a ghost,” she all but shrieks, like a little banshee. “This whole house is haunted!”
+Oh shit, here we go again.
+Olivia was always seeing and hearing things.
+Monsters hiding under her bed and in her closet…
+Home intruders creeping through the shadows while she was trying to sleep…
+It was a whole mess.
+The kid had one hell of an imagination.
+Still, she could usually be talked down with logic, unlike many children her age.
+You: “What makes you think the house is haunted?” You asked patiently.
+Olivia: “There’s some really spooky sounds coming from your bedroom!” She cried.
+You nodded sagely.
+You: “I’ll go check it out, then.”
+But before you leave, she grabs your hand.
+Olivia: “Be careful! Ghosts can be awfully dangerous.”
+
+    -> Agree to investigate.
+===
+title: OliviaAfterParents
+tags: 
+colorID: 0
+position: 2077,-1751
+---
+Olivia: “So what did you find in your bedroom?” Olivia asks, wide-eyed and frightened.
+Olivia: “Were those spooky sounds the screams of the damned?”
+
+    -> Cite the squeaky bedroom door.<<if $interactedParentsDoor is true>>
+        <<jump RedHerring>>
+    -> Cite the staticky radio.<<if $interactedRadio is true>>
+        <<jump RedHerring>>
+    -> Cite wind in trees outside the bedroom window.<<if $interactedParentsWindow is true>>
+        <<jump CorrectChoice>>
+    -> Investigate further.
+===
+title: OliviaAfterKids
+tags: 
+colorID: 0
+position: 2324,-1757
+---
+Olivia: “So, Mister Skeptic, why exactly is my room so cold?” Olivia asks, arms crossed.
+Olivia: “It has to be a sign of a ghostly presence!”
+
+    -> Cite broken heater.<<if $interactedHeater is true>>
+        <<jump RedHerring>>
+    -> Cite cracked window.<<if $interactedKidsWindow is true>>
+        <<jump CorrectChoice>>
+    -> Cite malfunctioning thermostat.<<if $interactedThermostat is true>>
+        <<jump RedHerring>>
+    -> Investigate further.
+===
+title: OliviaAfterKitchen
+tags: 
+colorID: 0
+position: 2581,-1747
+---
+Olivia: "So were ghosts flickering the light in the kitchen?” Olivia asks.
+
+    -> Cite busted light switch.<<if $interactedLightSwitch is true>>
+        <<jump RedHerring>>
+    -> Cite bad light bulb.<<if $interactedBulb is true>>
+        <<jump RedHerring>>
+    -> Cite shitty breaker.<<if $interactedBreaker is true>>
+        <<jump CorrectChoice>>
+    -> Investigate further.
+===
+title: OliviaAfterGarage
+tags: 
+colorID: 0
+position: 2801,-1747
+---
+Olivia: So what rational explanation do you have for the garage door opening and closing all on its own?
+
+    -> Cite the door latch that doesn’t quite close.<<if $interactedLatch is true>>
+        <<jump CorrectChoice>>
+    -> Cite draft.<<if $interactedGarageWindow is true>>
+        <<jump RedHerring>>
+    -> Cite misaligned door hinges.<<if $interactedHinges is true>>
+        <<jump RedHerring>>
+    -> Investigate further.
+===
+title: RedHerring
+tags: 
+colorID: 0
+position: 2019,-2045
+---
+"No!” Olivia says. “That’s not it! That can’t be it! It makes no sense…” Her tone leaves no room for argument.
+===
+title: CorrectChoice
+tags: 
+colorID: 0
+position: 2536,-2048
+---
+<<if $gameState is 1>>
+    Olivia is silent, looking contemplative for a beat.
+    Olivia: “I guess that makes sense! The howling of the wind… The scratching of the branches on the window pane… But that doesn’t mean our new house isn’t haunted! My bedroom is one big cold spot! Obviously the sign of a ghost.”
+    You inhale deeply but stop yourself from sighing at the last second.
+    Regardless of whether Olivia is making things up for attention or really believes in ghosts, it’s your job as her parent to ease her worries.
+        -> Investigate Olivia's room.
+            <<set $gameState to 2>>
+<<elseif $gameState is 2>>
+    Olivia goes quiet, appearing to mull over your explanation in her head.
+    Olivia: “You’re right… I bet a cracking window does let in a lot of cold air.”
+    Just when you think you’ve set these ghost ideas to rest, she adds,
+    Olivia: “But I still think we have a phantom on our hands! The kitchen light keeps flickering on and off! How do you explain that, huh?”
+    It looks like you have more ghost busting to do.
+        -> Investigate the kitchen.
+            <<set $gameState to 3>>
+<<elseif $gameState is 3>>
+    Olivia hums and haws for a while before conceding.
+    Olivia: “Okay, you’re right. The bad breaker explains the flickering lights in the kitchen. But! But, but, but, but--! What about the garage door opening and closing all on its own? It could be signs of a ghost moving around the house! You need to go and investigate.”
+    You heaved a sigh.
+    Now you were at least 90% sure she was doing this to avoid helping you unpack, but hopefully investigating the garage would be her final request.
+        -> Investigate the garage.
+            <<set $gameState to 4>>
+<<elseif $gameState is 4>>
+    Olivia’s face screws up like she just sucked on a lemon.
+    You knew from past experience that this was her super serious thinking expression.
+    You wait for her to claim to have had nightmares about this house or a consistent feeling of being watched even when there was no one around or even objects changing places without being touched or whatever such nonsense.
+    But she doesn’t. Instead, eventually her expression smooths out and she nods.
+    Olivia: “That’s it, then,” she says. “Case closed. There is no ghost.”
+    Thank goodness that’s over.
+        -> Turn around.
+            <<set $gameState to 5>>
+            <<jump Ending>>
+<<endif>>
+===

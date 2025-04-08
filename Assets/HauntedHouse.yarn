@@ -4,14 +4,6 @@ colorID: 0
 position: 2290,-2290
 ---
 <<declare $gameState = 0 as number>>
-Moving day has finally arrived.
-After months of stress, packing, and paperwork, you can move into the new house.
-Your daughter Olivia has been looking forward to seeing the new house.
-This is a big change for a 9-year-old, but so far she seems to be handling it well.
-Now that the movers have brought in all the boxes and furniture, you should go check on how she’s doing.
-
--> Enter the house.
-    <<jump LivingRoom>>
 
 <<declare $interactedParentsDoor = false as bool>>
 <<declare $interactedRadio = false as bool>>
@@ -28,6 +20,14 @@ Now that the movers have brought in all the boxes and furniture, you should go c
 <<declare $interactedGarageWindow = false as bool>>
 <<declare $interactedHinges = false as bool>>
 <<declare $interactedLatch = false as bool>>
+
+Moving day has finally arrived.
+After months of stress, packing, and paperwork, you can move into the new house.
+Your daughter Olivia has been looking forward to seeing the new house.
+This is a big change for a 9-year-old, but so far she seems to be handling it well.
+Now that the movers have brought in all the boxes and furniture, you should go check on how she’s doing.
+
+-> Enter the house.
 ===
 title: LivingRoom
 tags: 
@@ -40,65 +40,6 @@ Nothing around but huge, heavy cardboard boxes and a few pieces of luggage.
 You’re almost as excited as you are nervous.
 You expected your daughter, Olivia, to be the opposite - more excited than nervous.
 But, after a quick lap around the house, she put down roots in the living room, looking anxious.
-
-<<if $gameState is 0>>
-    ->Talk to Olivia.
-        <<jump TalkToKid0>>
-<<elseif $gameState is 1>>
-    [[Talk to Olivia about the investigation of the master bedroom.|TalkToKid1]]
-    [[Search for the source of spooky sounds coming from the master bedroom.|ParentsBedroom]]
-<<elseif $gameState is 2>>
-    [[Talk to Olivia about the investigation of the kid’s bedroom.|TalkToKid2]]
-    [[Look into why Olivia’s room is so cold.|KidsBedroom]]
-<<elseif $gameState is 3>>
-    [[Talk to Olivia about the investigation of the kitchen.|TalkToKid3]]
-    [[Go check out why the kitchen light is flickering.|Kitchen]]
-<<elseif $gameState is 4>>
-    [[Talk to Olivia about the investigation of the garage.|TalkToKid4]]
-    [[Head to the garage.|Kitchen]]
-<<endif>>
-===
-title: TalkToKid0
-tags: 
-colorID: 0
-position: 1857,-1751
----
-<<set $gameState to 1>>“Heya, kiddo,” you say. “What’s the matter? You look like you have seen a ghost!”
-“That's because I have seen a ghost,” she all but shrieks, like a little banshee. “This whole house is haunted!”
-Oh shit, here we go again.
-Olivia was always seeing and hearing things.
-Monsters hiding under her bed and in her closet…
-Home intruders creeping through the shadows while she was trying to sleep…
-It was a whole mess.
-The kid had one hell of an imagination.
-Still, she could usually be talked down with logic, unlike many children her age.
-“What makes you think the house is haunted?” You asked patiently.
-“There’s some really spooky sounds coming from your bedroom!” She cried.
-You nodded sagely.
-“I’ll go check it out, then.”
-But before you leave, she grabs your hand.
-“Be careful! Ghosts can be awfully dangerous.”
-
-[[Agree to investigate.|LivingRoom]]
-===
-title: TalkToKid1
-tags: 
-colorID: 0
-position: 2077,-1751
----
-“So what did you find in your bedroom?” Olivia asks, wide-eyed and frightened.
-“Were those spooky sounds the screams of the damned?”
-
-<<if $interactedParentsDoor is true>>
-    [[Cite the squeaky bedroom door.|RedHerring]]
-<<endif>>
-<<if $interactedRadio is true>>
-    [[Cite the staticky radio.|RedHerring]]
-<<endif>>
-<<if $interactedParentsWindow is true>>
-    [[Cite wind in trees outside the bedroom window.|CorrectChoice]]
-<<endif>>
-[[Investigate further.|ParentsBedroom]]
 ===
 title: ParentsBedroom
 tags: 
@@ -110,36 +51,6 @@ It’s kind of hard for a house to feel like a home without any of the things th
 No wonder Olivia thinks the whole place is haunted.
 What were you supposed to be doing in this room again…?
 Oh yeah… Looking for the source of the spooky sounds Olivia’s been hearing.
-
-<<if $interactedParentsDoor is false>>
-    [[Examine bedroom door.|SqueakyDoor]]
-<<endif>>
-<<if $interactedRadio is false>>
-    [[Examine radio.|StatickyRadio]]
-<<endif>>
-<<if $interactedParentsWindow is false>>
-    [[Examine window.|ParentsWindow]]
-<<endif>>
-[[>>Go to living room.|LivingRoom]]
-===
-title: TalkToKid2
-tags: 
-colorID: 0
-position: 2324,-1757
----
-“So, Mister Skeptic, why exactly is my room so cold?” Olivia asks, arms crossed.
-“It has to be a sign of a ghostly presence!”
-
-<<if $interactedHeater is true>>
-    [[Cite broken heater.|RedHerring]]
-<<endif>>
-<<if $interactedKidsWindow is true>>
-    [[Cite cracked window.|CorrectChoice]]
-<<endif>>
-<<if $interactedThermostat is true>>
-    [[Cite malfunctioning thermostat.|RedHerring]]
-<<endif>>
-[[Investigate further.|KidsBedroom]]
 ===
 title: KidsBedroom
 tags: 
@@ -149,54 +60,6 @@ position: 2303,-1428
 Brrr! It really is freezing in Olivia’s room!
 Still, there has to be a rational explanation as to why it was so cold.
 Better fix it fast to bite these spectral fears in the bud.
-
-<<if $interactedHeater is false>>
-    [[Examine heater.|Heater]]
-<<endif>>
-<<if $interactedKidsWindow is false>>
-    [[Examine window.|KidsWindow]]
-<<endif>>
-<<if $interactedThermostat is false>>
-    [[Examine thermostat.|Thermostat]]
-<<endif>>
-[[Go to living room.|LivingRoom]]
-===
-title: TalkToKid3
-tags: 
-colorID: 0
-position: 2581,-1747
----
-"So were ghosts flickering the light in the kitchen?” Olivia asks.
-
-<<if $interactedLightSwitch is true>>
-    [[Cite busted light switch.|RedHerring]]
-<<endif>>
-<<if $interactedBulb is true>>
-    [[Cite bad light bulb.|RedHerring]]
-<<endif>>
-<<if $interactedBreaker is true>>
-    [[Cite shitty breaker.|CorrectChoice]]
-<<endif>>
-[[Investigate further.|Kitchen]]
-===
-title: TalkToKid4
-tags: 
-colorID: 0
-position: 2801,-1747
----
-Olivia: So what rational explanation do you have for the garage door opening and closing all on its own?
-
-<<if $interactedLatch is true>>
-    ->Cite the door latch that doesn’t quite close.
-        <<jump CorrectChoice>>
-<<endif>>
-<<if $interactedGarageWindow is true>>
-    [[Cite draft.|RedHerring]]
-<<endif>>
-<<if $interactedHinges is true>>
-    [[Cite misaligned door hinges.|RedHerring]]
-<<endif>>
-[[Investigate further.|Kitchen]]
 ===
 title: Kitchen
 tags: 
@@ -208,60 +71,6 @@ The room is long and barren, with only a few boxes of dishes and appliances stre
 In the center of the kitchen area, above the island counter hangs a single light, which appears to be flickering intermittently.
 By the end of the countertop is a door that leads into the utility room.
 Go figure a kid like her would find this a bit spooky.
-
-<<if $interactedLightSwitch is false>>
-    [[Examine light switch.|LightSwitch]]
-<<endif>>
-<<if $interactedBulb is false>>
-    [[Examine light bulb.|LightBulb]]
-<<endif>>
-[[Go to utility room.|UtilityRoom]]
-[[Go to living room.|LivingRoom]]
-===
-title: RedHerring
-tags: 
-colorID: 0
-position: 2049,-2056
----
-"No!” Olivia says. “That’s not it! That can’t be it! It makes no sense…” Her tone leaves no room for argument.
-===
-title: CorrectChoice
-tags: 
-colorID: 0
-position: 2536,-2048
----
-<<if $gameState is 1>>
-    Olivia is silent, looking contemplative for a beat.
-    “I guess that makes sense! The howling of the wind… The scratching of the branches on the window pane… But that doesn’t mean our new house isn’t haunted! My bedroom is one big cold spot! Obviously the sign of a ghost.”
-    You inhale deeply but stop yourself from sighing at the last second.
-    Regardless of whether Olivia is making things up for attention or really believes in ghosts, it’s your job as her parent to ease her worries.
-    <<set $gameState to 2>>
-    [[Agree to investigate.|LivingRoom]]
-<<elseif $gameState is 2>>
-    Olivia goes quiet, appearing to mull over your explanation in her head.
-    “You’re right… I bet a cracking window does let in a lot of cold air.”
-    Just when you think you’ve set these ghost ideas to rest, she adds,
-    “But I still think we have a phantom on our hands! The kitchen light keeps flickering on and off! How do you explain that, huh?”
-    It looks like you have more ghost busting to do.
-    <<set $gameState to 3>>
-    [[Agree to investigate.|LivingRoom]]
-<<elseif $gameState is 3>>
-    Olivia hums and haws for a while before conceding.
-    “Okay, you’re right. The bad breaker explains the flickering lights in the kitchen. But! But, but, but, but--! What about the garage door opening and closing all on its own? It could be signs of a ghost moving around the house! You need to go and investigate.”
-    You heaved a sigh.
-    Now you were at least 90% sure she was doing this to avoid helping you unpack, but hopefully investigating the garage would be her final request.
-    <<set $gameState to 4>>
-    [[Agree to investigate.|LivingRoom]]
-<<elseif $gameState is 4>>
-    Olivia’s face screws up like she just sucked on a lemon.
-    You knew from past experience that this was her super serious thinking expression.
-    You wait for her to claim to have had nightmares about this house or a consistent feeling of being watched even when there was no one around or even objects changing places without being touched or whatever such nonsense.
-    But she doesn’t. Instead, eventually her expression smooths out and she nods.
-    “That’s it, then,” she says. “Case closed. There is no ghost.”
-    Thank goodness that’s over.
-    <<set $gameState to 5>>
-    [[Turn around.|Ending]]
-<<endif>>
 ===
 title: Ending
 tags: 
@@ -272,9 +81,9 @@ You hear a creaking sound in the hallway behind you.
 Great, another weird noise that Olivia will probably complain about.
 You turn around to see if you can find the source of the creaking, and suddenly an apparition manifests in the hallway.
 It approaches you and you hear it say in a soft voice,
-“Hey, I’m your new roommate Greg. Sorry, I left the window open in the bedroom. It was getting a bit warm from the movers. Anyway, I’ll be in the attic most of the time. Nice to meet you.”
+Ghost: “Hey, I’m your new roommate Greg. Sorry, I left the window open in the bedroom. It was getting a bit warm from the movers. Anyway, I’ll be in the attic most of the time. Nice to meet you.”
 Greg then floated through the ceiling and disappeared.
-“Well,” you say to Olivia, “I guess there is a ghost, but he seems pretty chill.”
+You: “Well,” you say to Olivia, “I guess there is a ghost, but he seems pretty chill.”
 Olivia agrees.
 ===
 title: SqueakyDoor
@@ -282,92 +91,84 @@ tags:
 colorID: 0
 position: 1313,-1163
 ---
-<<set $interactedParentsDoor to true>> Jeez, this door is squeaky as hell.
+<<set $interactedParentsDoor to true>> 
+Jeez, this door is squeaky as hell.
 You should really oil the hinges.
 With the racket it’s making, maybe that is the creepy noise that Olivia is hearing.
-
-[[Keep looking around.|ParentsBedroom]]
 ===
 title: StatickyRadio
 tags: 
 colorID: 0
 position: 1537,-1164
 ---
-<<set $interactedRadio to true>> Who turned this thing on?
+<<set $interactedRadio to true>> 
+Who turned this thing on?
 The thing is such an antique that it’s a miracle it’s making any sound at all.
 You’ve been meaning to fix it up, but with the move… Oh well.
 This is probably the creepy sound that Olivia said she heard.
-
-[[Keep looking around.|ParentsBedroom]]
 ===
 title: ParentsWindow
 tags: 
 colorID: 0
 position: 1755,-1164
 ---
-<<set $interactedParentsWindow to true>> Oh wow is it windy outside.
+<<set $interactedParentsWindow to true>> 
+Oh wow is it windy outside.
 It’s practically howling…
 That, combined with the scratching of the tree branches against the window pane, is giving you goosebumps.
 This could be what Olivia was talking about when she heard spooky noises coming from this room.
-
-[[Keep looking around.|ParentsBedroom]]
 ===
 title: Heater
 tags: 
 colorID: 0
 position: 1967,-943
 ---
-<<set $interactedHeater to true>> You supposed the heater could be broken.
+<<set $interactedHeater to true>> 
+You supposed the heater could be broken.
 It seemed to be the obvious culprit, after all… Still, it looked fine.
 You weren’t exactly a repairman, though. Something internal could be cracked.
-
-[[Keep looking around.|KidsBedroom]]
 ===
 title: KidsWindow
 tags: 
 colorID: 0
 position: 2185,-945
 ---
-<<set $interactedKidsWindow to true>> Huh. No wonder the room was cold.
+<<set $interactedKidsWindow to true>> 
+Huh. No wonder the room was cold.
 There was a huge crack in Olivia’s bedroom window. It’s letting the winter chill creep in.
 Maybe this is the reason why the room is so cold.
-
-[[Keep looking around.|KidsBedroom]]
 ===
 title: Thermostat
 tags: 
 colorID: 0
 position: 2407,-943
 ---
-<<set $interactedThermostat to true>> Before entering Olivia’s room, you check the thermostat just outside the door.
+<<set $interactedThermostat to true>> 
+Before entering Olivia’s room, you check the thermostat just outside the door.
 It could be malfunctioning.
 Still, it was set at the same temperature as the rest of the house, and Olivia only reported a cold chill in her room.
-
-[[Keep looking around.|KidsBedroom]]
 ===
 title: LightSwitch
 tags: 
 colorID: 0
 position: 2621,-1163
 ---
-<<set $interactedLightSwitch to true>> The cover is cracked as though something impacted it.
+<<set $interactedLightSwitch to true>> 
+The cover is cracked as though something impacted it.
 Damn, someone must have bumped into it while moving boxes into the house.
 Now you’re gonna have to buy a new cover. Better check if it’s still working.
 You flip the switch off and the lights go out.
 When you flip the switch on again, the light stays stable for a few moments before beginning to flicker again.
-
-[[Keep looking around.|Kitchen]]
 ===
 title: LightBulb
 tags: 
 colorID: 0
 position: 2841,-1163
 ---
-<<set $interactedBulb to true>> Upon closer inspection, the incandescent light bulb appears to be cracked.
+<<set $interactedBulb to true>> 
+Upon closer inspection, the incandescent light bulb appears to be cracked.
 The filament appears to be unbroken, but the surrounding glass has several fractures running around the bulb, and some pieces are entirely missing.
 Better get that replaced before someone cuts themselves.
-
-[[Keep looking around.|Kitchen]]
 ===
 title: UtilityRoom
 tags: 
@@ -377,24 +178,15 @@ position: 3061,-1163
 You enter the utility room, a cramped and loud space containing the washer and dryer, the water heater, the boiler tank, and a few dusty storage shelves.
 There is a breaker panel on the wall and two doors which lead to the kitchen and garage.
 With a room as cramped and loud as this, no wonder Olivia doesn’t like it.
-
-<<if $interactedBreaker is false>>
-    [[Examine the breaker.|Breaker]]
-<<endif>>
-<<if $gameState is 4>>
-    [[Go to garage.|Garage]]
-<<endif>>
-[[Go to kitchen.|Kitchen]]
 ===
 title: Breaker
 tags: 
 colorID: 0
 position: 2839,-931
 ---
-<<set $interactedBreaker to true>> You open the breaker panel and see that there are two columns of switches with labels for every room in the house.
+<<set $interactedBreaker to true>> 
+You open the breaker panel and see that there are two columns of switches with labels for every room in the house.
 Almost all of the switches are flipped toward the center of the panel, but one switch labelled “kitchen” appears to be loose in the center, not fully flipped in either direction.
-
-[[Keep looking around.|UtilityRoom]]
 ===
 title: Garage
 tags: 
@@ -406,50 +198,36 @@ The room is spacious, big enough to fit two cars, but is mostly empty at the mom
 The back wall is lined with empty shelves.
 There are two large, closed garage doors at the front of the room, and a window on the outer wall offering a view of the neighbor’s driveway.
 Though you had closed the door behind you, it begins to creak open again on its own.
-
-<<if $interactedGarageWindow is false>>
-    [[Examine the window.|GarageWindow]]
-<<endif>>
-<<if $interactedHinges is false>>
-    [[Examine the door hinges.|GarageHinges]]
-<<endif>>
-<<if $interactedLatch is false>>
-    [[Examine the door latch.|GarageLatch]]
-<<endif>>
-[[Go to utility room.|UtilityRoom]]
 ===
 title: GarageWindow
 tags: 
 colorID: 0
 position: 3469,-1179
 ---
-<<set $interactedGarageWindow to true>> You take a closer look at the window.
+<<set $interactedGarageWindow to true>> 
+You take a closer look at the window.
 The leaves in the trees outside are swaying, and you can hear a faint whistle through the pane as the wind blows.
 Not the greatest windows the world has ever seen, but it beats being cold.
-
-[[Keep looking around.|Garage]]
 ===
 title: GarageHinges
 tags: 
 colorID: 0
 position: 3694,-1176
 ---
-<<set $interactedHinges to true>> You examine the hinges on the door to the garage.
+<<set $interactedHinges to true>> 
+You examine the hinges on the door to the garage.
 Judging by the amount of rust on them, they’ve definitely seen better days.
 It makes for a terrible squeaking noise when the door moves.
 When was this thing installed, 1892? You’d better buy some WD-40.
-
-[[Keep looking around.|Garage]]
 ===
 title: GarageLatch
 tags: 
 colorID: 0
 position: 3914,-1176
 ---
-<<set $interactedLatch to true>> You look at the latch on the door and notice that it seems unusually short.
+<<set $interactedLatch to true>> 
+You look at the latch on the door and notice that it seems unusually short.
 When you turn the door handle, it recedes fully into the door, but when you let go it barely protrudes out.
 You close and open the door and notice the latch does not make contact with the door frame.
 Why can’t anything in this house ever just work properly?
-
-[[Keep looking around.|Garage]]
 ===
