@@ -1,9 +1,11 @@
 {
   "projectFileVersion": 2,
   "sourceFiles": [
-    "**/*.yarn"
+    "HauntedHouse.yarn"
   ],
-  "excludeFiles": [],
+  "excludeFiles": [
+    "**/*~/*"
+  ],
   "localisation": {},
   "baseLanguage": "en",
   "compilerOptions": {}

@@ -7,6 +7,9 @@ public class OliviaController : MonoBehaviour
 {
     public TMP_Text text;
     public GameManager gameManager;
+    public string[] dialogueOptions;
+    public string dialogueFail;
+    public string dialogueSuccess;
 
     // Start is called before the first frame update
     void Start()

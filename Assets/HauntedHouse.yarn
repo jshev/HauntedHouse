@@ -3,29 +3,31 @@ tags:
 colorID: 0
 position: 2290,-2290
 ---
-<<set $gameState to 0>>Moving day has finally arrived.
+<<declare $gameState = 0 as number>>
+Moving day has finally arrived.
 After months of stress, packing, and paperwork, you can move into the new house.
 Your daughter Olivia has been looking forward to seeing the new house.
 This is a big change for a 9-year-old, but so far she seems to be handling it well.
 Now that the movers have brought in all the boxes and furniture, you should go check on how she’s doing.
 
-[[Enter the house.|LivingRoom]]
+-> Enter the house.
+    <<jump LivingRoom>>
 
-<<set $interactedParentsDoor to false>>
-<<set $interactedRadio to false>>
-<<set $interactedParentsWindow to false>>
+<<declare $interactedParentsDoor = false as bool>>
+<<declare $interactedRadio = false as bool>>
+<<declare $interactedParentsWindow = false as bool>>
 
-<<set $interactedHeater to false>>
-<<set $interactedKidsWindow to false>>
-<<set $interactedThermostat to false>>
+<<declare $interactedHeater to false>>
+<<declare $interactedKidsWindow to false>>
+<<declare $interactedThermostat to false>>
 
-<<set $interactedLightSwitch to false>>
-<<set $interactedBulb to false>>
-<<set $interactedBreaker to false>>
+<<declare $interactedLightSwitch = false as bool>>
+<<declare $interactedBulb = false as bool>>
+<<declare $interactedBreaker = false as bool>>
 
-<<set $interactedGarageWindow to false>>
-<<set $interactedHinges to false>>
-<<set $interactedLatch to false>>
+<<declare $interactedGarageWindow = false as bool>>
+<<declare $interactedHinges = false as bool>>
+<<declare $interactedLatch = false as bool>>
 ===
 title: LivingRoom
 tags: 
@@ -33,14 +35,15 @@ colorID: 0
 position: 2290,-2051
 ---
 First day in a new house…
-The whole place is basically empty, and the living room --the heart of the house-- was the emptiest room of them all.
+The whole place is basically empty, and the living room - the heart of the house - was the emptiest room of them all.
 Nothing around but huge, heavy cardboard boxes and a few pieces of luggage.
 You’re almost as excited as you are nervous.
-You expected your daughter, Olivia, to be the opposite: more excited than nervous.
+You expected your daughter, Olivia, to be the opposite - more excited than nervous.
 But, after a quick lap around the house, she put down roots in the living room, looking anxious.
 
 <<if $gameState is 0>>
-    [[Talk to Olivia.|TalkToKid0]]
+    ->Talk to Olivia.
+        <<jump TalkToKid0>>
 <<elseif $gameState is 1>>
     [[Talk to Olivia about the investigation of the master bedroom.|TalkToKid1]]
     [[Search for the source of spooky sounds coming from the master bedroom.|ParentsBedroom]]
@@ -181,10 +184,11 @@ tags:
 colorID: 0
 position: 2801,-1747
 ---
-“So what relational explanation do you have for the garage door opening and closing all on its own?” Olivia asks, one brow raised.
+Olivia: So what rational explanation do you have for the garage door opening and closing all on its own?
 
 <<if $interactedLatch is true>>
-    [[Cite the door latch that doesn’t quite close.|CorrectChoice]]
+    ->Cite the door latch that doesn’t quite close.
+        <<jump CorrectChoice>>
 <<endif>>
 <<if $interactedGarageWindow is true>>
     [[Cite draft.|RedHerring]]

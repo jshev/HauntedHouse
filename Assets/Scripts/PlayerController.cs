@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using Yarn.Unity;
 
 public class PlayerController : MonoBehaviour
 {
@@ -9,6 +10,7 @@ public class PlayerController : MonoBehaviour
     private GameObject colliding = null;
     public GameManager gameManager;
     public GameObject canvas;
+    public DialogueRunner dialogue;
 
     // Start is called before the first frame update
     void Start()
@@ -26,7 +28,8 @@ public class PlayerController : MonoBehaviour
         {
             if(colliding.tag == "Olivia")
             {
-                canvas.SetActive(true);
+                //canvas.SetActive(true);
+                dialogue.StartDialogue("LivingRoom");
             }
         }
     }
