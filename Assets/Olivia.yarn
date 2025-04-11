@@ -1,7 +1,7 @@
 ﻿title: OliviaStart
 tags: 
 colorID: 0
-position: 1857,-1751
+position: 1789,-2157
 ---
 <<set $gameState to 1>>
 You: “Heya, kiddo,” you say. “What’s the matter? You look like you have seen a ghost!”
@@ -25,7 +25,7 @@ Olivia: “Be careful! Ghosts can be awfully dangerous.”
 title: OliviaAfterParents
 tags: 
 colorID: 0
-position: 2077,-1751
+position: 1838,-2001
 ---
 Olivia: “So what did you find in your bedroom?” Olivia asks, wide-eyed and frightened.
 Olivia: “Were those spooky sounds the screams of the damned?”
@@ -41,7 +41,7 @@ Olivia: “Were those spooky sounds the screams of the damned?”
 title: OliviaAfterKids
 tags: 
 colorID: 0
-position: 2324,-1757
+position: 2136,-2239
 ---
 Olivia: “So, Mister Skeptic, why exactly is my room so cold?” Olivia asks, arms crossed.
 Olivia: “It has to be a sign of a ghostly presence!”
@@ -57,7 +57,7 @@ Olivia: “It has to be a sign of a ghostly presence!”
 title: OliviaAfterKitchen
 tags: 
 colorID: 0
-position: 2581,-1747
+position: 2387,-2370
 ---
 Olivia: "So were ghosts flickering the light in the kitchen?” Olivia asks.
 
@@ -72,7 +72,7 @@ Olivia: "So were ghosts flickering the light in the kitchen?” Olivia asks.
 title: OliviaAfterGarage
 tags: 
 colorID: 0
-position: 2801,-1747
+position: 2826,-2311
 ---
 Olivia: So what rational explanation do you have for the garage door opening and closing all on its own?
 
@@ -87,14 +87,14 @@ Olivia: So what rational explanation do you have for the garage door opening and
 title: RedHerring
 tags: 
 colorID: 0
-position: 2019,-2045
+position: 2232,-1851
 ---
 "No!” Olivia says. “That’s not it! That can’t be it! It makes no sense…” Her tone leaves no room for argument.
 ===
 title: CorrectChoice
 tags: 
 colorID: 0
-position: 2536,-2048
+position: 2622,-1927
 ---
 <<if $gameState is 1>>
     Olivia is silent, looking contemplative for a beat.

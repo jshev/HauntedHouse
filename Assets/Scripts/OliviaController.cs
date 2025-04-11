@@ -24,22 +24,22 @@ public class OliviaController : MonoBehaviour
         
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        Debug.Log($"Olivia collided with {collision.name}");
+    //private void OnTriggerEnter2D(Collider2D collision)
+    //{
+    //    Debug.Log($"Olivia collided with {collision.name}");
 
-        if (collision.name != "Player")
-            return;
+    //    if (collision.name != "Player")
+    //        return;
 
-        text.gameObject.SetActive(true);
-    }
+    //    text.gameObject.SetActive(true);
+    //}
 
-    private void OnTriggerExit2D(Collider2D collision)
-    {
-        Debug.Log($"Olivia stopped colliding with {collision.name}");
-        if (collision.name != "Player")
-            return;
+    //private void OnTriggerExit2D(Collider2D collision)
+    //{
+    //    Debug.Log($"Olivia stopped colliding with {collision.name}");
+    //    if (collision.name != "Player")
+    //        return;
 
-        text.gameObject.SetActive(false);
-    }
+    //    text.gameObject.SetActive(false);
+    //}
 }
