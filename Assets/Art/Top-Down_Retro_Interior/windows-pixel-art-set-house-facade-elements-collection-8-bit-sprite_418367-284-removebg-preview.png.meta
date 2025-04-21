@@ -1,0 +1,545 @@
+fileFormatVersion: 2
+guid: 44328b36d27e44d0fbc6c0edd1fb3f43
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: windows-pixel-art-set-house-facade-elements-collection-8-bit-sprite_418367-284-removebg-preview_0
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 249
+        width: 68
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 733121c86936e49dfb016c6230922cc7
+      internalID: 233781069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: windows-pixel-art-set-house-facade-elements-collection-8-bit-sprite_418367-284-removebg-preview_1
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 249
+        width: 40
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 530dab9c3042c4024a90b65b155b6157
+      internalID: -813054969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: windows-pixel-art-set-house-facade-elements-collection-8-bit-sprite_418367-284-removebg-preview_2
+      rect:
+        serializedVersion: 2
+        x: 173
+        y: 218
+        width: 60
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2297626f15bab42309971d0a054a3483
+      internalID: 1184279075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: windows-pixel-art-set-house-facade-elements-collection-8-bit-sprite_418367-284-removebg-preview_3
+      rect:
+        serializedVersion: 2
+        x: 244
+        y: 198
+        width: 130
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3805810d5b9014be0b7e000738debb47
+      internalID: 407481489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: windows-pixel-art-set-house-facade-elements-collection-8-bit-sprite_418367-284-removebg-preview_4
+      rect:
+        serializedVersion: 2
+        x: 381
+        y: 198
+        width: 60
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ec4e64cc39da45b8b45d0b0e8f2106d
+      internalID: 1437054275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: windows-pixel-art-set-house-facade-elements-collection-8-bit-sprite_418367-284-removebg-preview_5
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 273
+        width: 68
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3bf22000dcb324c0c92fe9bbbb691aff
+      internalID: 1914733325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: windows-pixel-art-set-house-facade-elements-collection-8-bit-sprite_418367-284-removebg-preview_6
+      rect:
+        serializedVersion: 2
+        x: 531
+        y: 194
+        width: 60
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7d36dd61ccd64de2836693f96e6374b
+      internalID: 226571462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: windows-pixel-art-set-house-facade-elements-collection-8-bit-sprite_418367-284-removebg-preview_7
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 171
+        width: 59
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd51d21faeec0463db17cebbb819d29d
+      internalID: 828914647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: windows-pixel-art-set-house-facade-elements-collection-8-bit-sprite_418367-284-removebg-preview_8
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 175
+        width: 52
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 043157708acec4881b46b5f9eddd4629
+      internalID: -198355589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: windows-pixel-art-set-house-facade-elements-collection-8-bit-sprite_418367-284-removebg-preview_9
+      rect:
+        serializedVersion: 2
+        x: 444
+        y: 198
+        width: 76
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e469ff93510394fe69131c5a328e9efb
+      internalID: 92814334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: windows-pixel-art-set-house-facade-elements-collection-8-bit-sprite_418367-284-removebg-preview_10
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 45
+        width: 130
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 977a2f07ded5f412aaed14e316620de7
+      internalID: -1320475269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: windows-pixel-art-set-house-facade-elements-collection-8-bit-sprite_418367-284-removebg-preview_11
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 127
+        width: 52
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96a20ccbaa9764b4fb0b3197093450db
+      internalID: 1130708300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: windows-pixel-art-set-house-facade-elements-collection-8-bit-sprite_418367-284-removebg-preview_12
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 127
+        width: 52
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d25ae358ace6c4856aecea9f90dd8c58
+      internalID: -1388173692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: windows-pixel-art-set-house-facade-elements-collection-8-bit-sprite_418367-284-removebg-preview_13
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 127
+        width: 52
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 012287ec60fd34152b739ceb7b1c94d4
+      internalID: -1643360309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: windows-pixel-art-set-house-facade-elements-collection-8-bit-sprite_418367-284-removebg-preview_14
+      rect:
+        serializedVersion: 2
+        x: 413
+        y: 49
+        width: 83
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 863fd5d02a43b427790c4a2a493b0643
+      internalID: -1949814555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: windows-pixel-art-set-house-facade-elements-collection-8-bit-sprite_418367-284-removebg-preview_15
+      rect:
+        serializedVersion: 2
+        x: 507
+        y: 72
+        width: 83
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77e30e8449a214a208f72ad15c16fae7
+      internalID: 1600205618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: windows-pixel-art-set-house-facade-elements-collection-8-bit-sprite_418367-284-removebg-preview_16
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 45
+        width: 68
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d1659d6c86f74d659dd820772f1cf7e
+      internalID: -578961423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: windows-pixel-art-set-house-facade-elements-collection-8-bit-sprite_418367-284-removebg-preview_17
+      rect:
+        serializedVersion: 2
+        x: 244
+        y: 45
+        width: 68
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52103fe7d0a164e0eac43b17e7be400b
+      internalID: -1011141676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: windows-pixel-art-set-house-facade-elements-collection-8-bit-sprite_418367-284-removebg-preview_18
+      rect:
+        serializedVersion: 2
+        x: 314
+        y: 45
+        width: 68
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17103522bf2a04b9cb64a9b5803ceb41
+      internalID: -1553087486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      windows-pixel-art-set-house-facade-elements-collection-8-bit-sprite_418367-284-removebg-preview_0: 233781069
+      windows-pixel-art-set-house-facade-elements-collection-8-bit-sprite_418367-284-removebg-preview_1: -813054969
+      windows-pixel-art-set-house-facade-elements-collection-8-bit-sprite_418367-284-removebg-preview_10: -1320475269
+      windows-pixel-art-set-house-facade-elements-collection-8-bit-sprite_418367-284-removebg-preview_11: 1130708300
+      windows-pixel-art-set-house-facade-elements-collection-8-bit-sprite_418367-284-removebg-preview_12: -1388173692
+      windows-pixel-art-set-house-facade-elements-collection-8-bit-sprite_418367-284-removebg-preview_13: -1643360309
+      windows-pixel-art-set-house-facade-elements-collection-8-bit-sprite_418367-284-removebg-preview_14: -1949814555
+      windows-pixel-art-set-house-facade-elements-collection-8-bit-sprite_418367-284-removebg-preview_15: 1600205618
+      windows-pixel-art-set-house-facade-elements-collection-8-bit-sprite_418367-284-removebg-preview_16: -578961423
+      windows-pixel-art-set-house-facade-elements-collection-8-bit-sprite_418367-284-removebg-preview_17: -1011141676
+      windows-pixel-art-set-house-facade-elements-collection-8-bit-sprite_418367-284-removebg-preview_18: -1553087486
+      windows-pixel-art-set-house-facade-elements-collection-8-bit-sprite_418367-284-removebg-preview_2: 1184279075
+      windows-pixel-art-set-house-facade-elements-collection-8-bit-sprite_418367-284-removebg-preview_3: 407481489
+      windows-pixel-art-set-house-facade-elements-collection-8-bit-sprite_418367-284-removebg-preview_4: 1437054275
+      windows-pixel-art-set-house-facade-elements-collection-8-bit-sprite_418367-284-removebg-preview_5: 1914733325
+      windows-pixel-art-set-house-facade-elements-collection-8-bit-sprite_418367-284-removebg-preview_6: 226571462
+      windows-pixel-art-set-house-facade-elements-collection-8-bit-sprite_418367-284-removebg-preview_7: 828914647
+      windows-pixel-art-set-house-facade-elements-collection-8-bit-sprite_418367-284-removebg-preview_8: -198355589
+      windows-pixel-art-set-house-facade-elements-collection-8-bit-sprite_418367-284-removebg-preview_9: 92814334
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
